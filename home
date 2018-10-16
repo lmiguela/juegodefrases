@@ -1,0 +1,22 @@
+#include <iostream>
+#include "funciones.h"
+
+using namespace std;
+
+int main() {
+
+    int n,contador=0;
+    char r1[10][2][100]={{"A palabras necias", "oidos sordos"} ,{"Ojos que no ven", "corazón que no siente"}};
+
+    cout << "**********************************************"<<'\n'<<'\n';
+    cout << "*                                            *"<<'\n'<<'\n';
+    cout << "* Bienvenidos al juego de refranes:          *"<<'\n'<<'\n';
+    cout << "*                                            *"<<'\n'<<'\n';
+    cout << "**********************************************"<<'\n'<<'\n';
+
+    do{
+        MenuJuego(n,r1,contador);
+    }while (n!=3);
+
+    return 0;
+}
